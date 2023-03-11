@@ -55,7 +55,7 @@ const clima = async function(busqueda) {
     console.log(climaOp);
     console.log(listArr);
 
-    region.textContent = climaOp.city.name;
+    region.textContent = `${climaOp.city.name}, ${climaOp.city.country}`;
 
     const converList = listArr
       .map(listNuva => listNuva.dt_txt.split(' '))

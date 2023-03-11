@@ -1198,7 +1198,9 @@ article .container__off {
     width: 1060px;
     display: flex;
     justify-content: end;
-    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
   }
   /* CSS GP-001 */
 

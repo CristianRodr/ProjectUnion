@@ -12,6 +12,7 @@ const max = document.querySelector('.max');
 const amanecer = document.querySelector('.dawn');
 const atardecer = document.querySelector('.sunset');
 const icon = document.querySelector('.clima-icon');
+const legenda = document.querySelector(".legend")
 
 const LOCALSTORAGE_KEY = "clima-message";
 
@@ -93,6 +94,9 @@ const busquedaClima = async function (busqueda) {
 
     const { main, sys, wind, weather } = dataClima;
     console.log(weather[0]);
+
+    console.log(weather[0].description);
+    legenda.textContent = `El pronostico para ${dataClima.name}, ${sys.country}. el dia de hoy, ${weather[0].description}`
 
     let icon_Nubes = [weather[0].main];
     console.log(icon_Nubes);
