@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function (ev) {
   const theme = localStorage.getItem("clima-message");
   console.log(theme);
   clima(theme);
+  grafica(theme);
 });
 
 
